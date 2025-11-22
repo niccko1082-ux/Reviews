@@ -27,7 +27,7 @@ def menu():
         try:
             option = int(input("Ingresa una opción: "))
         except:
-            print("❌ Opción inválida")
+            print(" Opción inválida")
             continue
 
         #  USAR ELIF EN LUGAR DE IF para no evaluar todas
@@ -93,7 +93,7 @@ def menu():
         
         elif option == 8:
             print("  Recargando inventario desde CSV...")
-            inventario = cargar_inventario()  # ✅ GRACIAS A 'global', esto funciona
+            inventario = cargar_inventario()  #  GRACIAS A 'global', esto funciona
         
         elif option == 9:
             guardar_inventario(inventario)
